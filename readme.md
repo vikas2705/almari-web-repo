@@ -10,7 +10,7 @@ To clone and install the project locally, follow these steps:
    git clone https://github.com/vikas2705/almari-web-repo.git
 
 2. Navigate to the project directory:
-   cd vikas-alm
+   cd almari-web-repo
 
 3. Install all the dependencies using npm:
    npm install
@@ -19,9 +19,7 @@ To clone and install the project locally, follow these steps:
 
 To run the project locally, you have two options:
 
-### Option 1: Development Mode (with nodemon)
-
-If you want to run the server with nodemon, follow these steps:
+### Option 1: Development Mode
 
 1. Run the following command to start the server:
    npm run dev
@@ -41,6 +39,3 @@ If you prefer to run the server without nodemon, follow these steps:
 
 That's it! You should now be able to see the website running locally on your machine.
 
-## License
-
-This project is licensed under the [License Name] - [License URL].
