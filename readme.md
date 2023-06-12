@@ -7,7 +7,7 @@ This project is a digital luxury wardrobe app, where we believe that style and s
 To clone and install the project locally, follow these steps:
 
 1. Clone the repository using the following command:
-   git clone https://github.com/krvivi28/vikas-alm.git
+   git clone https://github.com/vikas2705/almari-web-repo.git
 
 2. Navigate to the project directory:
    cd vikas-alm
