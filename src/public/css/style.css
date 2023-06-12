@@ -1,0 +1,165 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+.email {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(8, 163, 8);
+  color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Syne", sans-serif;
+}
+
+li {
+  list-style: outside;
+  margin-left: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+}
+
+.website-logo {
+  position: absolute;
+  top: -20px;
+  left: 25px;
+}
+
+.website-logo-img {
+  width: 200px;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 5px;
+}
+.button-main {
+  background: #000000;
+  border-radius: 30px;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 12px 40px;
+}
+.custom-container {
+  padding: 0 60px;
+}
+.border-b {
+  border-bottom: 1px solid !important;
+}
+
+.border-top-gray {
+  border-top: 0.4px solid #666666;
+}
+.footer-right {
+  border-left: 0.4px solid #666666;
+}
+
+.team-img {
+  width: 328px;
+  height: 328px;
+  border-radius: 50%;
+  background-size: cover;
+}
+.team-img#shruti {
+  background-image: url("../assets/images/team/shruti.png");
+}
+.team-img#vima {
+  background-image: url("../assets/images/team/vima-new.png");
+}
+.team-img#gaurav {
+  background-image: url("../assets/images/team/gaurav.jpg");
+}
+
+.visible_on_dekstop {
+  display: none;
+}
+
+.visible_on_mobile {
+  display: none;
+}
+.visible_on_tablets {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .visible_on_mobile {
+    display: inline;
+  }
+
+  .team-img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .footer-right {
+    border-left: none;
+    border-top: 0.4px solid #666666;
+  }
+
+  .custom-container {
+    padding: 0 24px;
+  }
+
+  .button-container {
+    bottom: -30px;
+  }
+  .website-logo-img {
+    width: 160px;
+  }
+  .website-logo {
+    top: -15px;
+    left: 15px;
+  }
+  .header-container {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  .visible_on_tablets {
+    display: inline;
+  }
+
+  .custom-container {
+    padding: 0 24px;
+  }
+
+  .header-container {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .visible_on_dekstop {
+    display: inline;
+  }
+}
+
+input#user-email:focus,
+input#user-email:focus-visible {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
