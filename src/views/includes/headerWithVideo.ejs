@@ -1,53 +1,61 @@
 <!--Website header starts-->
 <header class="header-main">
-  <div class="header-container">
-    <video
-      width="100%"
-      autoplay
-      muted
-      loop
-      class="visible_on_dekstop"
-      playsinline
-    >
-      <source src="./assets/video/Desktop_11.mp4" type="video/mp4" />
-    </video>
-    <video
-      width="100%"
-      autoplay
-      muted
-      loop
-      playsinline
-      class="visible_on_tablets"
-    >
-      <source src="./assets/video/Tab.mp4" type="video/mp4" />
-    </video>
-    <video
-      width="100%"
-      autoplay
-      muted
-      loop
-      class="visible_on_mobile"
-      playsinline
-    >
-      <source src="./assets/video/Mobile-New.mp4" type="video/mp4" />
-    </video>
-    <a href="/">
-      <div class="website-logo">
-        <img
-          src="./assets/images/ramp-up-logo.png"
-          alt="ramp-up logo"
-          loading="lazy"
-          class="website-logo-img"
-        />
-      </div>
-    </a>
-    <div
-      href="#early-register"
-      class="button-container"
-      onclick="smoothScroll(document.getElementById('early-register'))"
-    >
-      <button class="button-main">Early Access</button>
+    <div class="header-container">
+        <video
+            width="100%"
+            autoplay
+            muted
+            loop
+            class="visible_on_dekstop"
+            playsinline
+        >
+            <source src="./assets/video/Desktop_11.mp4" type="video/mp4" />
+        </video>
+        <video
+            width="100%"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="visible_on_tablets"
+        >
+            <source src="./assets/video/Tab.mp4" type="video/mp4" />
+        </video>
+        <video
+            width="100%"
+            autoplay
+            muted
+            loop
+            class="visible_on_mobile"
+            playsinline
+        >
+            <source src="./assets/video/Mobile-New.mp4" type="video/mp4" />
+        </video>
+        <a href="./index.html">
+            <div
+                class="website-logo triggerGA"
+                data-event-action="Website_logo_click"
+                data-event-category="Home page"
+                data-event-label="Website Logo"
+            >
+                <img
+                    src="./assets/images/ramp-up-logo.png"
+                    alt="ramp-up logo"
+                    loading="lazy"
+                    class="website-logo-img"
+                />
+            </div>
+        </a>
+        <div
+            href="#early-register"
+            class="button-container triggerGA"
+            onclick="smoothScroll(document.getElementById('early-register'))"
+            data-event-action="Early_access_header_click"
+            data-event-category="Home page"
+            data-event-label="Early Access Header"
+        >
+            <button class="button-main">Early Access</button>
+        </div>
     </div>
-  </div>
 </header>
 <!--Website header ends-->

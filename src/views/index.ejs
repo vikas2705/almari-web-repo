@@ -1,217 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-4PM51NDFK6"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-4PM51NDFK6");
-    </script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      RampUp | Your sustainable digital luxury app that helps you digitize your
-      wardrobe, style fun outfits, buy and sell pre-loved luxury. Resale, Rent,
-      Revive with Ramp-Up!
-    </title>
-    <meta
-      name="og_title"
-      property="og:title"
-      content="RampUp | Your sustainable digital luxury app that helps you digitize
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-WL3T33DCMD"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-WL3T33DCMD");
+        </script>
+        <!-- Google tag (gtag.js) ends -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            RampUp | Your sustainable digital luxury app that helps you digitize
+            your wardrobe, style fun outfits, buy and sell pre-loved luxury.
+            Resale, Rent, Revive with Ramp-Up!
+        </title>
+        <meta
+            name="og_title"
+            property="og:title"
+            content="RampUp | Your sustainable digital luxury app that helps you digitize
             your wardrobe, style fun outfits, buy and sell pre-loved luxury.
             Resale, Rent, Revive with Ramp-Up!"
-    />
-    <meta
-      name="twitter:title"
-      content="RampUp | Your sustainable digital luxury app that helps you digitize your
+        />
+        <meta
+            name="twitter:title"
+            content="RampUp | Your sustainable digital luxury app that helps you digitize your
             wardrobe, style fun outfits, buy and sell pre-loved luxury. Resale,
             Rent, Revive with Ramp-Up!"
-    />
-    <meta
-      name="Keywords"
-      content="Luxury, Resale, India Luxury, Luxury Styling, Styling, Wardrobe, Digital Wardrobe, Luxury Wardrobe, Luxury platform, Stylist, Online Stylist, Luxury Stylist, Digital Closet, Online Closet, Luxury Repair, Luxury Laundry, Indian Luxury, Luxury Fashion, Sustainable Fashion, Rent, Revive, Resale, Luxury Upcycle, Luxury Resale, India Fashion, Designer Clothing, Pre-Owned, Pre-Loved, Almari, Gucci, Prada, Cartier, Rolex, Chanel, Louis Vuitton, Manish Malhotra, Sabyasachi"
-    />
-    <meta
-      name="Description"
-      content="Your sustainable digital luxury app that helps you digitize your wardrobe, style fun outfits, buy and sell pre-loved luxury. Resale, Rent, Revive with Ramp-Up!"
-    />
-    <meta
-      property="og:description"
-      content="Your sustainable digital luxury app that helps you digitize your wardrobe, style fun outfits, buy and sell pre-loved luxury. Resale, Rent, Revive with Ramp-Up!"
-    />
-    <meta property="og:type" content="website" />
-    <meta name="og_site_name" property="og:site_name" content="rampup.in" />
-    <meta name="og_url" property="og:url" content="https://www.rampup.in" />
-    <meta name="robots" content="index, nofollow" />
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <script src="./js/tailwind-config.js"></script>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Inter:300,400,600,700&amp;lang=en"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Syne:300,400,600,700&amp;lang=en"
-    />
-
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
-    <style type="text/tailwindcss">
-      @layer utilities {
-        .content-auto {
-          content-visibility: auto;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <%- include("includes/headerWithVideo")%>
-
-    <!--Register for early access starts-->
-    <section
-      id="early-register"
-      class="content custom-container my-20 md:my-28"
-    >
-      <form action="/earlyaccess" method="post">
-        <div
-          class="flex flex-col justify-center lg:flex-row lg:justify-between items-center"
-        >
-          <h3 class="font-bold text-3xl lg:text-5xl mb-4 lg:mb-0">
-            Register to get <br class="hidden lg:inline" />
-            early access
-          </h3>
-
-          <div class="w-full lg:w-auto">
-            <label>
-              Email
-              <br />
-              <input
-                type="email"
-                id="user-email"
-                name="email"
-                required
-                class="border-none border-b mb-4 border-b-solid w-full lg:min-w-[330px]"
-              />
-              <br />
-              <%if(email){%>
-              <span class="badge badge-success email"
-                ><%=email%> Registration Successfull!</span
-              >
-              <%}%>
-              <span
-                id="registartion-response"
-                class="text-xs tracking-widest"
-              ></span>
-            </label>
-          </div>
-          <input type="submit" class="button-main px-24 bg-black" />
-        </div>
-      </form>
-    </section>
-    <!--Register for early access ends-->
-
-    <!-- About us starts-->
-    <section class="content custom-container my-20 md:my-28">
-      <h3 class="font-bold text-3xl lg:text-5xl mb-8">About us</h3>
-      <div
-        class="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start text-2xl about-us"
-      >
-        <div>
-          <p class="mb-8 lg:mr-32">
-            Welcome to our digital luxury wardrobe app, where we believe that
-            style and sustainability go hand in hand. Our story begins with a
-            memory of our mothers and grandmothers, who taught us the value of
-            reusing and repurposing everything we owned.
-          </p>
-
-          <p class="mb-8 lg:mr-32">
-            Growing up, we watched in awe as they transformed old clothes into
-            something new and beautiful. They were our original stylists, and we
-            learned the art of dressing from them. But we also learned something
-            else - the importance of sustainability and caring for the
-            environment.
-          </p>
-
-          <p class="mb-8 lg:mr-32">
-            Today, we're carrying on this tradition of reuse by creating a
-            luxury wardrobe app that allows people to experience the joy of
-            high-end fashion, with thoughtful consideration to the harmful
-            effects on the environment. We believe that every piece of clothing
-            has a story to tell, and by reviving and reusing what you have, and
-            with the art and knowledge of conscious buying, you can extend the
-            life of these items and reduce waste.
-          </p>
-
-          <p class="mb-8 lg:mr-32">
-            By choosing our luxury wardrobe app, you're making a statement about
-            your commitment to the environment and to a more sustainable future
-            for fashion.
-          </p>
-
-          <p class="mb-8 lg:mr-32">
-            Thank you for joining us on this journey. We're honoured to be a
-            part of your story, and we look forward to sharing many more
-            memories with you.
-          </p>
-        </div>
-        <img
-          src="./assets/images/about-us-img.png"
-          alt="About Ramp-up"
-          loading="lazy"
         />
-      </div>
-    </section>
-    <!-- About us ends -->
+        <meta
+            name="Keywords"
+            content="Luxury, Resale, India Luxury, Luxury Styling, Styling, Wardrobe, Digital Wardrobe, Luxury Wardrobe, Luxury platform, Stylist, Online Stylist, Luxury Stylist, Digital Closet, Online Closet, Luxury Repair, Luxury Laundry, Indian Luxury, Luxury Fashion, Sustainable Fashion, Rent, Revive, Resale, Luxury Upcycle, Luxury Resale, India Fashion, Designer Clothing, Pre-Owned, Pre-Loved, Almari, Gucci, Prada, Cartier, Rolex, Chanel, Louis Vuitton, Manish Malhotra, Sabyasachi"
+        />
+        <meta
+            name="Description"
+            content="Your sustainable digital luxury app that helps you digitize your wardrobe, style fun outfits, buy and sell pre-loved luxury. Resale, Rent, Revive with Ramp-Up!"
+        />
+        <meta
+            property="og:description"
+            content="Your sustainable digital luxury app that helps you digitize your wardrobe, style fun outfits, buy and sell pre-loved luxury. Resale, Rent, Revive with Ramp-Up!"
+        />
+        <meta property="og:type" content="website" />
+        <meta name="og_site_name" property="og:site_name" content="rampup.in" />
+        <meta name="og_url" property="og:url" content="https://www.rampup.in" />
+        <meta name="robots" content="index, nofollow" />
 
-    <!-- Team section starts-->
-    <section class="content custom-container mt-20 mb-12 md:my-28">
-      <h3 class="font-bold text-3xl lg:text-5xl mb-8">The Team</h3>
-      <div
-        class="flex flex-col lg:flex-row justify-center lg:justify-between items-center"
-      >
-        <div class="text-center mb-4 lg:mb-auto">
-          <div id="shruti" class="team-img"></div>
-          <a
-            href="https://www.linkedin.com/in/shruti-garg-822aa73/"
-            class="underline block text-2xl mt-8 mb-4"
-            target="_blank"
-            >Co-Founder</a
-          >
-        </div>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <script src="./js/tailwind-config.js"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Inter:300,400,600,700&amp;lang=en"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Syne:300,400,600,700&amp;lang=en"
+        />
 
-        <div class="text-center mb-4 lg:mb-auto">
-          <div id="vima" class="team-img text-center"></div>
-          <a
-            href="https://www.linkedin.com/in/vima-philips/"
-            class="underline block text-2xl text-center mt-8 mb-4"
-            target="_blank"
-            >Co-Founder</a
-          >
-        </div>
-        <div class="text-center mb-4 lg:mb-auto">
-          <div id="gaurav" class="team-img text-center"></div>
-          <a
-            href="https://www.linkedin.com/in/gagupta79/"
-            class="underline block text-2xl text-center mt-8 mb-4"
-            target="_blank"
-            >Advisor</a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- Team section ends-->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="./assets/images/favicon.png"
+        />
+        <style type="text/tailwindcss">
+            @layer utilities {
+                .content-auto {
+                    content-visibility: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <%- include("includes/headerWithVideo")%>
 
-    <%- include("includes/footer")%>
-  </body>
-  <script type="text/javascript" src="./js/app-config.js"></script>
+        <!--Register for early access starts-->
+        <section
+            id="early-register"
+            class="content custom-container my-20 md:my-28"
+        >
+            <form
+                onsubmit="handleSubmitForm(event)"
+                action="/earlyaccess"
+                method="post"
+            >
+                <div
+                    class="flex flex-col justify-center lg:flex-row lg:justify-between items-center"
+                >
+                    <h3 class="font-bold text-3xl lg:text-5xl mb-4 lg:mb-0">
+                        Register to get <br class="hidden lg:inline" />
+                        early access
+                    </h3>
+
+                    <div class="w-full lg:w-auto">
+                        <label>
+                            Email
+                            <br />
+                            <input
+                                type="email"
+                                id="user-email"
+                                name="email"
+                                required
+                                class="border-none border-b mb-4 border-b-solid w-full lg:min-w-[330px]"
+                            />
+                            <br />
+                            <%if(email){%>
+                            <span class="badge badge-success email"
+                                ><%=email%> Registration Successfull!</span
+                            >
+                            <%}%>
+                            <span
+                                id="registartion-response"
+                                class="text-xs tracking-widest"
+                            ></span>
+                        </label>
+                    </div>
+                    <input type="submit" class="button-main px-24 bg-black" />
+                </div>
+            </form>
+        </section>
+        <!--Register for early access ends-->
+
+        <!-- Team section starts-->
+        <section class="content custom-container mt-20 mb-12 md:my-28">
+            <h3 class="font-bold text-3xl lg:text-5xl mb-8">The Team</h3>
+            <div
+                class="flex flex-col lg:flex-row justify-center lg:justify-between items-center"
+            >
+                <div class="text-center mb-4 lg:mb-auto">
+                    <div id="shruti" class="team-img"></div>
+                    <a
+                        href="https://www.linkedin.com/in/shruti-garg-822aa73/"
+                        class="underline block text-2xl mt-8 mb-4 triggerGA"
+                        target="_blank"
+                        data-event-action="Team_Shruti_click"
+                        data-event-category="Home page"
+                        data-event-label="Team Shruti"
+                        >Co-Founder</a
+                    >
+                </div>
+
+                <div class="text-center mb-4 lg:mb-auto">
+                    <div id="vima" class="team-img text-center"></div>
+                    <a
+                        href="https://www.linkedin.com/in/vima-philips/"
+                        class="underline block text-2xl text-center mt-8 mb-4 triggerGA"
+                        target="_blank"
+                        data-event-action="Team_Vima_click"
+                        data-event-category="Home page"
+                        data-event-label="Team Vima"
+                        >Co-Founder</a
+                    >
+                </div>
+                <div class="text-center mb-4 lg:mb-auto">
+                    <div id="gaurav" class="team-img text-center"></div>
+                    <a
+                        href="https://www.linkedin.com/in/gagupta79/"
+                        class="underline block text-2xl text-center mt-8 mb-4 triggerGA"
+                        target="_blank"
+                        data-event-action="Team_Gaurav_click"
+                        data-event-category="Home page"
+                        data-event-label="Team Gaurav"
+                        >Advisor</a
+                    >
+                </div>
+            </div>
+        </section>
+        <!-- Team section ends-->
+
+        <!-- Team section starts-->
+        <section class="content custom-container mt-20 mb-12 md:my-28">
+            <h3 class="font-bold text-3xl lg:text-5xl mb-8">The Team</h3>
+            <div
+                class="flex flex-col lg:flex-row justify-center lg:justify-between items-center"
+            >
+                <div class="text-center mb-4 lg:mb-auto">
+                    <div id="shruti" class="team-img"></div>
+                    <a
+                        href="https://www.linkedin.com/in/shruti-garg-822aa73/"
+                        class="underline block text-2xl mt-8 mb-4"
+                        target="_blank"
+                        >Co-Founder</a
+                    >
+                </div>
+
+                <div class="text-center mb-4 lg:mb-auto">
+                    <div id="vima" class="team-img text-center"></div>
+                    <a
+                        href="https://www.linkedin.com/in/vima-philips/"
+                        class="underline block text-2xl text-center mt-8 mb-4"
+                        target="_blank"
+                        >Co-Founder</a
+                    >
+                </div>
+                <div class="text-center mb-4 lg:mb-auto">
+                    <div id="gaurav" class="team-img text-center"></div>
+                    <a
+                        href="https://www.linkedin.com/in/gagupta79/"
+                        class="underline block text-2xl text-center mt-8 mb-4"
+                        target="_blank"
+                        >Advisor</a
+                    >
+                </div>
+            </div>
+        </section>
+        <!-- Team section ends-->
+
+        <%- include("includes/footer")%>
+    </body>
+    <script type="text/javascript" src="./js/app-config.js"></script>
 </html>

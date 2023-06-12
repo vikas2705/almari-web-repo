@@ -1,8 +1,3 @@
-var arrow = document.getElementById("top-arrow");
-arrow.addEventListener("click", function (e) {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
 window.smoothScroll = function (target) {
     var scrollContainer = target;
     do {
@@ -33,8 +28,7 @@ window.smoothScroll = function (target) {
 
 function handleSubmitForm(event) {
     const emailId = document.getElementById("user-email").value;
-    const url =
-        "http://project1-elb-871616855.ap-south-1.elb.amazonaws.com:5000";
+    const url = "https://apis.ramp-up.in:5001";
 
     const requestHeaders = {
         "Content-Type": "application/json",
@@ -63,13 +57,19 @@ function handleSubmitForm(event) {
         } else {
             const elem = document.getElementById("registartion-response");
             elem.innerHTML = "Registration Failed. Please try again!";
+            event.preventDefault();
+            event.stopPropagation();
         }
     });
-    event.preventDefault();
-    event.stopPropagation();
 }
 
 async function postEmailData(url = "", requestHeaders, requestBody) {
+    triggerGoogleAnalyticsEvent({
+        eventAction: "early_access_form_submit",
+        eventCategory: "Home page",
+        eventLabel: "Early Access Form Submit",
+    });
+
     const response = await fetch(url, {
         method: "POST",
         mode: "cors",
@@ -78,3 +78,44 @@ async function postEmailData(url = "", requestHeaders, requestBody) {
     });
     return response.json();
 }
+
+function triggerGoogleAnalyticsEvent({
+    eventAction = "",
+    eventCategory,
+    eventLabel = "",
+}) {
+    window.gtag("event", eventAction, {
+        event_category: eventCategory,
+        event_label: eventLabel,
+    });
+}
+
+function initGAEvents(event) {
+    const eventAction = this.getAttribute("data-event-action");
+    const eventLabel = this.getAttribute("data-event-label");
+    const eventCategory = this.getAttribute("data-event-category");
+
+    console.log(eventAction);
+    console.log(eventLabel);
+    console.log(eventCategory);
+
+    triggerGoogleAnalyticsEvent({
+        eventAction,
+        eventCategory,
+        eventLabel,
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function (event) {
+    // Your code to run since DOM is loaded and ready
+    const elements = document.getElementsByClassName("triggerGA");
+    for (let index = 0; index < elements.length; index++) {
+        const elem = elements[index];
+        elem.addEventListener("click", initGAEvents);
+    }
+
+    var arrow = document.getElementById("top-arrow");
+    arrow.addEventListener("click", function (e) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
