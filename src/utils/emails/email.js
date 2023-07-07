@@ -19,7 +19,7 @@ export const earlyEmailConfirmation = async (req, res, next) => {
   const message = {
     from: "codingninjas2k16@gmail.com",
     to: email,
-    subject: "RampUp Registration Successfull",
+    subject: "Ramp-Up Registration Successfull",
     html: mailTemplate,
   };
   transporter.sendMail(message, (error, response) => {
